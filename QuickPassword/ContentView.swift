@@ -43,9 +43,19 @@ struct ContentView: View {
             }
             
             VStack {
+                Spacer()
+                    .frame(height: 60)
                 headerCard
-            }
+                sectionTitle
+                PasswordCard
+            }.border(Color.red)
+            
+           
         }
+        
+      
+        
+       
         
     }
 }
@@ -58,12 +68,7 @@ struct ContentView: View {
 extension ContentView {
     var headerBackground: some View {
         Rectangle()
-            .fill(LinearGradient(colors: [
-                Color(red: 82/255, green: 133/255, blue: 246/255),
-                Color(red: 40/255, green: 92/255, blue: 222/255),
-                Color(red: 40/255, green: 92/255, blue: 222/255)
-            ],
-                startPoint: .bottom, endPoint: .top))
+            .fill(Color(red: 0.365, green: 0.373, blue: 0.937))
             .frame(maxWidth: .infinity)
             .frame(height: 150)
             .mask {
@@ -108,8 +113,79 @@ extension ContentView {
 extension ContentView  {
     var headerCard: some View {
         HStack {
-            VStack {
-               
+            Spacer()
+                    VStack {
+                       Text("Capital")
+                            .font(.system(size: 18, weight: .medium))
+                        Text("Off")
+                            .font(.system(size: 20, weight: .medium))
+                            .foregroundColor(.gray)
+                    }
+            Spacer()
+                    VStack {
+                       Text("Symbol")
+                            .font(.system(size: 18, weight: .medium))
+                        Text("On")
+                            .font(.system(size: 20, weight: .medium))
+                            .foregroundColor(.green)
+                    }
+            Spacer()
+                    VStack {
+                       Text("Length")
+                            .font(.system(size: 18, weight: .medium))
+                        Text("10")
+                            .font(.system(size: 20, weight: .medium))
+                            .foregroundColor(.gray)
+                    }
+            Spacer()
+        }
+        .padding(.horizontal, 30)
+        .padding(.vertical, 20)
+        .background(.ultraThinMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 20.0))
+        .shadow(color: Color.black.opacity(0.3), radius: 15)
+        .padding(.horizontal, 28)
+    }
+}
+
+extension ContentView {
+    var sectionTitle: some View {
+        HStack {
+            Text("Recently created")
+                .foregroundColor(.black)
+                .bold()
+                .font(.system(size: 20))
+                
+        }
+            .frame(width: 200)
+            .frame(height: 50)
+            .background(.ultraThinMaterial)
+            .cornerRadius(10)
+            .padding(.top, 2)
+    }
+}
+
+extension ContentView {
+    var PasswordCard: some View {
+        VStack {
+            HStack {
+                Image(systemName: "key.radiowaves.forward.fill")
+                Text("New Password")
+                Spacer()
+                Circle()
+                    .frame(width: 10, height: 10)
+                Text("Strong")
+            }.foregroundColor(.gray)
+            
+            HStack {
+                Text("Request for a new Apple Macbook Pro")
+                    .font(.system(size: 16, weight: .bold))
+                   
+                
+            }
+            
+            HStack {
+                
             }
         }
     }
