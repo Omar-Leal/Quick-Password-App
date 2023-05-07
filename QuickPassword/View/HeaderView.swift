@@ -8,36 +8,19 @@
 import SwiftUI
 
 
-struct CustomRectangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        // adding points to drawing the rect
-        var path = Path()
-        path.move(to: CGPoint(x: rect.minX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxX))
-       
-        // adding point to drawing the curve in the bellow side
-        let c1 = CGPoint(x: rect.midX + 50, y: rect.maxX + 20)
-        let c2 = CGPoint(x: rect.midX - 50, y: rect.maxY + 20)
-        path.addCurve(
-            to: CGPoint(x: rect.minY, y: rect.maxY),
-            control1: c1,
-            control2: c2)
-        path.closeSubpath()
-        
-        return path
-    }
-}
 
 
-struct ContentView: View {
+
+struct HeaderView: View {
     var body: some View {
         ZStack(alignment: .top) {
+            ///MARK: APP BACKGROUND
             VStack {
                 headerBackground
-                Spacer()
+               Spacer()
             }
             
+            //MARK: HEADER BUTTONS
             VStack {
                 headerButtons
             }
@@ -46,23 +29,23 @@ struct ContentView: View {
                 Spacer() .frame(height: 60)
                 headerCard
                 sectionTitle
-                VStack(spacing: 20) {
-                    ScrollView(.vertical, showsIndicators: false) {
-                        PasswordCard
-                        PasswordCard
-                        PasswordCard
-                        PasswordCard
-                        PasswordCard
-                        PasswordCard
-                    }
-                }.padding(.top)
+//                VStack(spacing: 20) {
+//                    ScrollView(.vertical, showsIndicators: false) {
+//                       PasswordCard()
+//                        PasswordCard()
+//                        PasswordCard()
+//                        PasswordCard()
+//                        PasswordCard()
+//                    }
+//                }.padding(.top)
+                
+                
             }
-          
+    
            
         }
         
       
-        
        
         
     }
@@ -73,7 +56,7 @@ struct ContentView: View {
 
 
 // MARK: HEADER BACKGROUND
-extension ContentView {
+extension HeaderView {
     var headerBackground: some View {
         Rectangle()
             .fill(Color(red: 0.365, green: 0.373, blue: 0.937))
@@ -87,7 +70,7 @@ extension ContentView {
 }
 
 //MARK: HEADER BUTTONS
-extension ContentView {
+extension HeaderView {
     var headerButtons: some View {
         HStack{
             Button {
@@ -118,7 +101,7 @@ extension ContentView {
 }
 
 // MARK: HEADER CARD
-extension ContentView  {
+extension HeaderView  {
     var headerCard: some View {
         HStack {
             Spacer()
@@ -157,64 +140,30 @@ extension ContentView  {
     }
 }
 
-extension ContentView {
+extension HeaderView {
     var sectionTitle: some View {
-        VStack(alignment: .leading) {
-            Text("Recently created")
-                .foregroundColor(.black)
+        VStack {
+            Text("Recently")
+                .foregroundColor(.primary)
                 .bold()
                 .font(.system(size: 20))
+                .offset(x: -140)
                 
         }
-            .frame(width: 200)
+        .frame(maxWidth: .infinity)
             .frame(height: 50)
-            .background(.white)
             .cornerRadius(10)
-            .padding(.top, 2)
+          //  .padding(.top, 2)
     }
 }
 
-extension ContentView {
-    var PasswordCard: some View {
-        VStack(alignment: .leading, spacing: 13) {
-            HStack {
-                Image(systemName: "key.radiowaves.forward.fill")
-                Text("New Password")
-                Spacer()
-                Circle()
-                    .frame(width: 10, height: 10)
-                Text("Strong")
-            }.foregroundColor(.gray)
-            
-            HStack {
-                Text("Request for a new Apple Macbook Pro")
-                    .font(.system(size: 16, weight: .bold))
-               
-                
-            }
-            
-            HStack {
-                Text("For")
-                Text("Omar Leal")
-                Spacer()
-                Text("Length: 8")
-                   
-            }
-        }
-        .padding(.horizontal, 20)
-        .frame(maxWidth: .infinity)
-        .padding(.vertical, 20)
-        .background(.ultraThinMaterial)
-        .cornerRadius(10)
-        .shadow(color: Color.black.opacity(0.3), radius: 15.0, x: 0, y: 0)
-       // .padding(.vertical)
-        .padding(.horizontal, 20)
-    }
-}
+
+
+
 
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        HeaderView()
     }
 }

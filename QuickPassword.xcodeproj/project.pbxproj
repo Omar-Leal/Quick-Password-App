@@ -7,16 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E77B3BC12A07C4FF00D36C99 /* CustomRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */; };
+		E77B3BC32A07C5AC00D36C99 /* PasswordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */; };
+		E77B3BC52A07CA0C00D36C99 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */; };
+		E77B3BC72A07F84F00D36C99 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC62A07F84F00D36C99 /* PasswordModel.swift */; };
+		E77B3BC92A07F86100D36C99 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */; };
+		E77B3BCB2A07FEB400D36C99 /* LevelBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */; };
 		E7EE48A52A06A0EC009225C0 /* QuickPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */; };
-		E7EE48A72A06A0EC009225C0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE48A62A06A0EC009225C0 /* ContentView.swift */; };
+		E7EE48A72A06A0EC009225C0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE48A62A06A0EC009225C0 /* HeaderView.swift */; };
 		E7EE48A92A06A0ED009225C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EE48A82A06A0ED009225C0 /* Assets.xcassets */; };
 		E7EE48AC2A06A0ED009225C0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EE48AB2A06A0ED009225C0 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRectangle.swift; sourceTree = "<group>"; };
+		E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCard.swift; sourceTree = "<group>"; };
+		E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreen.swift; path = ../../../../../MainScreen.swift; sourceTree = "<group>"; };
+		E77B3BC62A07F84F00D36C99 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordModel.swift; path = ../../../../../PasswordModel.swift; sourceTree = "<group>"; };
+		E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordViewModel.swift; path = ../../../../../PasswordViewModel.swift; sourceTree = "<group>"; };
+		E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelBar.swift; path = ../../../../../LevelBar.swift; sourceTree = "<group>"; };
 		E7EE48A12A06A0EC009225C0 /* QuickPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasswordApp.swift; sourceTree = "<group>"; };
-		E7EE48A62A06A0EC009225C0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E7EE48A62A06A0EC009225C0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		E7EE48A82A06A0ED009225C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E7EE48AB2A06A0ED009225C0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +44,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E77B3BBC2A07C45100D36C99 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E77B3BC62A07F84F00D36C99 /* PasswordModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E77B3BBD2A07C45B00D36C99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E7EE48A62A06A0EC009225C0 /* HeaderView.swift */,
+				E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E77B3BBE2A07C46300D36C99 /* VM */ = {
+			isa = PBXGroup;
+			children = (
+				E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */,
+			);
+			path = VM;
+			sourceTree = "<group>";
+		};
+		E77B3BBF2A07C4E900D36C99 /* Atoms */ = {
+			isa = PBXGroup;
+			children = (
+				E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */,
+				E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */,
+				E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */,
+			);
+			path = Atoms;
+			sourceTree = "<group>";
+		};
 		E7EE48982A06A0EC009225C0 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +98,11 @@
 		E7EE48A32A06A0EC009225C0 /* QuickPassword */ = {
 			isa = PBXGroup;
 			children = (
+				E77B3BBF2A07C4E900D36C99 /* Atoms */,
+				E77B3BBE2A07C46300D36C99 /* VM */,
+				E77B3BBD2A07C45B00D36C99 /* View */,
+				E77B3BBC2A07C45100D36C99 /* Model */,
 				E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */,
-				E7EE48A62A06A0EC009225C0 /* ContentView.swift */,
 				E7EE48A82A06A0ED009225C0 /* Assets.xcassets */,
 				E7EE48AA2A06A0ED009225C0 /* Preview Content */,
 			);
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7EE48A72A06A0EC009225C0 /* ContentView.swift in Sources */,
+				E77B3BC72A07F84F00D36C99 /* PasswordModel.swift in Sources */,
+				E77B3BC92A07F86100D36C99 /* PasswordViewModel.swift in Sources */,
+				E77B3BC52A07CA0C00D36C99 /* MainScreen.swift in Sources */,
+				E7EE48A72A06A0EC009225C0 /* HeaderView.swift in Sources */,
 				E7EE48A52A06A0EC009225C0 /* QuickPasswordApp.swift in Sources */,
+				E77B3BC32A07C5AC00D36C99 /* PasswordCard.swift in Sources */,
+				E77B3BCB2A07FEB400D36C99 /* LevelBar.swift in Sources */,
+				E77B3BC12A07C4FF00D36C99 /* CustomRectangle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
