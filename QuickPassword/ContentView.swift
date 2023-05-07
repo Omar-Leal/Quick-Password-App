@@ -43,12 +43,20 @@ struct ContentView: View {
             }
             
             VStack {
-                Spacer()
-                    .frame(height: 60)
+                Spacer() .frame(height: 60)
                 headerCard
                 sectionTitle
-                PasswordCard
-            }.border(Color.red)
+                VStack(spacing: 20) {
+                    ScrollView(.vertical, showsIndicators: false) {
+                        PasswordCard
+                        PasswordCard
+                        PasswordCard
+                        PasswordCard
+                        PasswordCard
+                        PasswordCard
+                    }
+                }.padding(.top)
+            }
             
            
         }
@@ -119,7 +127,8 @@ extension ContentView  {
                             .font(.system(size: 18, weight: .medium))
                         Text("Off")
                             .font(.system(size: 20, weight: .medium))
-                            .foregroundColor(.gray)
+                            .foregroundColor(.black)
+                            .bold()
                     }
             Spacer()
                     VStack {
@@ -141,7 +150,7 @@ extension ContentView  {
         }
         .padding(.horizontal, 30)
         .padding(.vertical, 20)
-        .background(.ultraThinMaterial)
+        .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 20.0))
         .shadow(color: Color.black.opacity(0.3), radius: 15)
         .padding(.horizontal, 28)
@@ -150,7 +159,7 @@ extension ContentView  {
 
 extension ContentView {
     var sectionTitle: some View {
-        HStack {
+        VStack(alignment: .leading) {
             Text("Recently created")
                 .foregroundColor(.black)
                 .bold()
@@ -159,7 +168,7 @@ extension ContentView {
         }
             .frame(width: 200)
             .frame(height: 50)
-            .background(.ultraThinMaterial)
+            .background(.white)
             .cornerRadius(10)
             .padding(.top, 2)
     }
@@ -167,7 +176,7 @@ extension ContentView {
 
 extension ContentView {
     var PasswordCard: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 13) {
             HStack {
                 Image(systemName: "key.radiowaves.forward.fill")
                 Text("New Password")
@@ -180,14 +189,26 @@ extension ContentView {
             HStack {
                 Text("Request for a new Apple Macbook Pro")
                     .font(.system(size: 16, weight: .bold))
-                   
+               
                 
             }
             
             HStack {
-                
+                Text("For")
+                Text("Omar Leal")
+                Spacer()
+                Text("Length: 8")
+                   
             }
         }
+        .padding(.horizontal, 20)
+        .frame(maxWidth: .infinity)
+        .padding(.vertical, 20)
+        .background(.ultraThinMaterial)
+        .cornerRadius(10)
+        .shadow(color: Color.black.opacity(0.3), radius: 15.0, x: 0, y: 0)
+       // .padding(.vertical)
+        .padding(.horizontal, 20)
     }
 }
 
