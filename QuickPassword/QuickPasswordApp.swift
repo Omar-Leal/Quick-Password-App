@@ -11,7 +11,7 @@ import SwiftUI
 struct QuickPasswordApp: App {
     var body: some Scene {
         WindowGroup {
-            MainScreen()
+            AppEntry()
         }
     }
 }

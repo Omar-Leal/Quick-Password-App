@@ -7,12 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E73E37EC2A0EE92D00F08A7F /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E37E72A0EE92D00F08A7F /* Poppins-Black.ttf */; };
+		E73E37ED2A0EE92D00F08A7F /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E37E82A0EE92D00F08A7F /* Poppins-Bold.ttf */; };
+		E73E37EE2A0EE92D00F08A7F /* Poppins-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E37E92A0EE92D00F08A7F /* Poppins-Regular.ttf */; };
+		E73E37EF2A0EE92D00F08A7F /* Poppins-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E37EA2A0EE92D00F08A7F /* Poppins-ExtraBold.ttf */; };
+		E73E37F02A0EE92D00F08A7F /* Poppins-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E73E37EB2A0EE92D00F08A7F /* Poppins-Medium.ttf */; };
+		E73E37F22A0F126200F08A7F /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73E37F12A0F126200F08A7F /* SplashView.swift */; };
+		E73E37F42A0F17FD00F08A7F /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E73E37F32A0F17FD00F08A7F /* AppEntry.swift */; };
 		E77B3BC12A07C4FF00D36C99 /* CustomRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */; };
 		E77B3BC32A07C5AC00D36C99 /* PasswordCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */; };
 		E77B3BC52A07CA0C00D36C99 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */; };
 		E77B3BC72A07F84F00D36C99 /* PasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC62A07F84F00D36C99 /* PasswordModel.swift */; };
 		E77B3BC92A07F86100D36C99 /* PasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */; };
 		E77B3BCB2A07FEB400D36C99 /* LevelBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */; };
+		E7AB8A1A2A09568900C4117A /* CustomStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7AB8A192A09568900C4117A /* CustomStepper.swift */; };
+		E7AB8A1F2A099B2A00C4117A /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = E7AB8A1E2A099B2900C4117A /* Fonts */; };
+		E7BBF0372A0ED31300769957 /* CustomCornes.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BBF0362A0ED31300769957 /* CustomCornes.swift */; };
+		E7D48DA02A0910EA001ED39C /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D48D9F2A0910EA001ED39C /* FormView.swift */; };
+		E7D48DA22A0912FF001ED39C /* Checkmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D48DA12A0912FF001ED39C /* Checkmark.swift */; };
 		E7EE48A52A06A0EC009225C0 /* QuickPasswordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */; };
 		E7EE48A72A06A0EC009225C0 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EE48A62A06A0EC009225C0 /* HeaderView.swift */; };
 		E7EE48A92A06A0ED009225C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7EE48A82A06A0ED009225C0 /* Assets.xcassets */; };
@@ -20,12 +32,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E73E37E72A0EE92D00F08A7F /* Poppins-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Black.ttf"; sourceTree = "<group>"; };
+		E73E37E82A0EE92D00F08A7F /* Poppins-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.ttf"; sourceTree = "<group>"; };
+		E73E37E92A0EE92D00F08A7F /* Poppins-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.ttf"; sourceTree = "<group>"; };
+		E73E37EA2A0EE92D00F08A7F /* Poppins-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-ExtraBold.ttf"; sourceTree = "<group>"; };
+		E73E37EB2A0EE92D00F08A7F /* Poppins-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Medium.ttf"; sourceTree = "<group>"; };
+		E73E37F12A0F126200F08A7F /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SplashView.swift; path = ../../../../SplashView.swift; sourceTree = "<group>"; };
+		E73E37F32A0F17FD00F08A7F /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppEntry.swift; path = ../../../../../AppEntry.swift; sourceTree = "<group>"; };
 		E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRectangle.swift; sourceTree = "<group>"; };
 		E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCard.swift; sourceTree = "<group>"; };
 		E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainScreen.swift; path = ../../../../../MainScreen.swift; sourceTree = "<group>"; };
 		E77B3BC62A07F84F00D36C99 /* PasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordModel.swift; path = ../../../../../PasswordModel.swift; sourceTree = "<group>"; };
 		E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PasswordViewModel.swift; path = ../../../../../PasswordViewModel.swift; sourceTree = "<group>"; };
 		E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LevelBar.swift; path = ../../../../../LevelBar.swift; sourceTree = "<group>"; };
+		E7AB8A192A09568900C4117A /* CustomStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomStepper.swift; path = ../../../../../CustomStepper.swift; sourceTree = "<group>"; };
+		E7AB8A1E2A099B2900C4117A /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Fonts; path = ../../../../Downloads/Montserrat/Fonts; sourceTree = "<group>"; };
+		E7AB8A202A099BAB00C4117A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7BBF0362A0ED31300769957 /* CustomCornes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomCornes.swift; path = ../../../../../CustomCornes.swift; sourceTree = "<group>"; };
+		E7D48D9F2A0910EA001ED39C /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FormView.swift; path = ../../../../../FormView.swift; sourceTree = "<group>"; };
+		E7D48DA12A0912FF001ED39C /* Checkmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Checkmark.swift; path = ../../../../../Checkmark.swift; sourceTree = "<group>"; };
 		E7EE48A12A06A0EC009225C0 /* QuickPassword.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuickPassword.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickPasswordApp.swift; sourceTree = "<group>"; };
 		E7EE48A62A06A0EC009225C0 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -44,6 +69,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E73E37E62A0EE90900F08A7F /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				E73E37E72A0EE92D00F08A7F /* Poppins-Black.ttf */,
+				E73E37E82A0EE92D00F08A7F /* Poppins-Bold.ttf */,
+				E73E37EA2A0EE92D00F08A7F /* Poppins-ExtraBold.ttf */,
+				E73E37EB2A0EE92D00F08A7F /* Poppins-Medium.ttf */,
+				E73E37E92A0EE92D00F08A7F /* Poppins-Regular.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
 		E77B3BBC2A07C45100D36C99 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -57,16 +94,18 @@
 			children = (
 				E7EE48A62A06A0EC009225C0 /* HeaderView.swift */,
 				E77B3BC42A07CA0C00D36C99 /* MainScreen.swift */,
+				E7D48D9F2A0910EA001ED39C /* FormView.swift */,
+				E73E37F32A0F17FD00F08A7F /* AppEntry.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		E77B3BBE2A07C46300D36C99 /* VM */ = {
+		E77B3BBE2A07C46300D36C99 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				E77B3BC82A07F86100D36C99 /* PasswordViewModel.swift */,
 			);
-			path = VM;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E77B3BBF2A07C4E900D36C99 /* Atoms */ = {
@@ -75,6 +114,9 @@
 				E77B3BC02A07C4FF00D36C99 /* CustomRectangle.swift */,
 				E77B3BC22A07C5AC00D36C99 /* PasswordCard.swift */,
 				E77B3BCA2A07FEB400D36C99 /* LevelBar.swift */,
+				E7D48DA12A0912FF001ED39C /* Checkmark.swift */,
+				E7AB8A192A09568900C4117A /* CustomStepper.swift */,
+				E7BBF0362A0ED31300769957 /* CustomCornes.swift */,
 			);
 			path = Atoms;
 			sourceTree = "<group>";
@@ -98,13 +140,17 @@
 		E7EE48A32A06A0EC009225C0 /* QuickPassword */ = {
 			isa = PBXGroup;
 			children = (
+				E73E37E62A0EE90900F08A7F /* CustomFonts */,
+				E7AB8A202A099BAB00C4117A /* Info.plist */,
+				E7AB8A1E2A099B2900C4117A /* Fonts */,
 				E77B3BBF2A07C4E900D36C99 /* Atoms */,
-				E77B3BBE2A07C46300D36C99 /* VM */,
+				E77B3BBE2A07C46300D36C99 /* ViewModel */,
 				E77B3BBD2A07C45B00D36C99 /* View */,
 				E77B3BBC2A07C45100D36C99 /* Model */,
 				E7EE48A42A06A0EC009225C0 /* QuickPasswordApp.swift */,
 				E7EE48A82A06A0ED009225C0 /* Assets.xcassets */,
 				E7EE48AA2A06A0ED009225C0 /* Preview Content */,
+				E73E37F12A0F126200F08A7F /* SplashView.swift */,
 			);
 			path = QuickPassword;
 			sourceTree = "<group>";
@@ -175,7 +221,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E73E37EC2A0EE92D00F08A7F /* Poppins-Black.ttf in Resources */,
 				E7EE48AC2A06A0ED009225C0 /* Preview Assets.xcassets in Resources */,
+				E73E37ED2A0EE92D00F08A7F /* Poppins-Bold.ttf in Resources */,
+				E73E37EF2A0EE92D00F08A7F /* Poppins-ExtraBold.ttf in Resources */,
+				E73E37EE2A0EE92D00F08A7F /* Poppins-Regular.ttf in Resources */,
+				E73E37F02A0EE92D00F08A7F /* Poppins-Medium.ttf in Resources */,
+				E7AB8A1F2A099B2A00C4117A /* Fonts in Resources */,
 				E7EE48A92A06A0ED009225C0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,11 +240,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77B3BC72A07F84F00D36C99 /* PasswordModel.swift in Sources */,
+				E7D48DA22A0912FF001ED39C /* Checkmark.swift in Sources */,
 				E77B3BC92A07F86100D36C99 /* PasswordViewModel.swift in Sources */,
 				E77B3BC52A07CA0C00D36C99 /* MainScreen.swift in Sources */,
 				E7EE48A72A06A0EC009225C0 /* HeaderView.swift in Sources */,
+				E73E37F42A0F17FD00F08A7F /* AppEntry.swift in Sources */,
 				E7EE48A52A06A0EC009225C0 /* QuickPasswordApp.swift in Sources */,
+				E7BBF0372A0ED31300769957 /* CustomCornes.swift in Sources */,
 				E77B3BC32A07C5AC00D36C99 /* PasswordCard.swift in Sources */,
+				E73E37F22A0F126200F08A7F /* SplashView.swift in Sources */,
+				E7D48DA02A0910EA001ED39C /* FormView.swift in Sources */,
+				E7AB8A1A2A09568900C4117A /* CustomStepper.swift in Sources */,
 				E77B3BCB2A07FEB400D36C99 /* LevelBar.swift in Sources */,
 				E77B3BC12A07C4FF00D36C99 /* CustomRectangle.swift in Sources */,
 			);
@@ -323,8 +381,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = T453A8JHR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickPassword/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -351,8 +411,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QuickPassword/Preview Content\"";
+				DEVELOPMENT_TEAM = T453A8JHR5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = QuickPassword/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
